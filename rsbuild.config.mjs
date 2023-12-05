@@ -6,6 +6,7 @@ export default defineConfig({
   tools: {
     rspack: (chain) => {
       chain.resolve.alias["react-native"] = "react-native-web"
+      return chain
     }
   }
 });
